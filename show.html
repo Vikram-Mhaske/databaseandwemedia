@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel='stylesheet' href="/static/show.css">
+  </head>
+  <style>
+    .container{
+      border:1px solid black;
+      margin:20px auto;
+      text-align:center;
+    }
+  </style>
+  <body border='2'>
+    <a href="/for"><h1>Home</h1></a>
+    <div>
+    <table>
+        <thead>
+            <tr>
+                <th> ID </th>
+                <th> Client </th>
+                <th> job </th>
+                <th> assign_to </th>
+                <th> priority </th>
+                <th> status </th>
+                <th> date </th>        
+            </tr>
+        </thead>
+            <tbody class='tbl-accordion-header'>
+    {% for row in formdata %}
+    <tr style='border:1px solid black;'>
+        <td>{{row.0}}</td>
+        <td>{{row.1}}</td>
+        <td>{{row.2}}</td>
+        <td>{{row.3}}</td>
+        <td>{{row.4}}</td>
+        <td>{{row.5}}</td>
+        <td>{{row.6}}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+    </div>
+   
+  </body>
+</html>

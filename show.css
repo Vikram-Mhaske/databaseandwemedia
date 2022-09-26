@@ -1,0 +1,34 @@
+table { 
+	width: 900px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border-bottom: 1px solid #ccc;
+	text-align: center; 
+	font-size: 18px;
+	}
+
+.tbl-accordion-header a {
+	color: #28c76f !important;
+}
+
+.tbl-accordion-body {
+	display: none;
+}
+
+.tbl-accordion-body td {
+  border-bottom: 0px; 
+}
+
+.tbl-accordion-body tr:last-child {
+  border-bottom: 1px solid #ccc; 
+}

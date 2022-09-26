@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact_form.css">
+    <link rel="stylesheet" href="/static/home.css">
+
+</head>
+<body>
+    <div class="container">
+<form method='POST' action='#'>
+    <label for="client">Choose a Client:</label>
+
+    <select name="client" id="client" required>
+      <option value="apple">apple</option>
+      <option value="samsung">Samsung</option>
+      <option value="nokia">Nokia</option>
+      <option value="Oppo">Oppo</option>
+    </select>
+    <br>
+    <label for='job'>Task</label><br>
+    <input type='text' name='job' id='job' required>
+    <br>
+    <label for="assign_to">Assign To</label>
+    <select name="assign_to" id="assign_to">
+        <option value="vikram">vikram</option>
+        <option value="raj">raj</option>
+        <option value="james">james</option>
+        <option value="calcifer">calcifer</option>
+      </select>
+    <br>
+    <label for="priority">priority</label><br>
+    <select name="priority" id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+    <br>
+    <label for="status">status</label><br>
+    <select name="status" id="status">
+        <option value="Complated">Completed</option>
+        <option value="pending">pending</option>
+        <option value="workinprogress">workinprogress</option>
+      </select>
+    <br>
+    <input type='date' name='date' id='date'>
+    <br>
+    <a href="/showdata"><input type='submit' name='submit' placeholder='Add Task'></a>
+</form>
+</div>
+
+    <!-- <div class="container">
+        <h3 style="text-align:center;">ADD TASK</h3>
+        <form>
+           
+            <label for="client" style="color:black;"></label>
+            <div class="select">
+                <select>
+                  <option value="1">client one</option>
+                  <option value="2">client two</option>
+                  <option value="3">client three</option>
+                  <option value="1">client four</option>
+                  <option value="2">client five</option>
+                  <option value="3">client six</option>
+                  <option value="1">client seven</option>
+                  <option value="2">client eight</option>
+                  <option value="3">client Nine</option>
+                </select>
+                <label for="job">Job</label><br>
+                <input type="text" name="job" id="job" placeholder="Enter Project Name: "><br>
+                <label for="assign">Assign to</label><br>
+                <select>
+                    <option value="suraj">Suraj</option>
+                    <option value="anis">Anis</option>
+                    <option value="Fayaz">Fayaz</option>
+                    <option value="Pratik">Pratik</option>
+                    <option value="Muzammin">Muzammin</option>
+                    <option value="vikram">vikram</option>
+                    <option value="kiran">kiran</option>
+                    <option value="Sushant">Sushant</option>
+                    <option value="Mayur">Mayur</option>
+                </select>
+              </div>
+  
+        </form> -->
+     <a href="/"><h1>Log Out</h1></a>
+     <br>
+     <a href="/showdata">TASK Details</a>
+        </div>
+</body>
+</html>
